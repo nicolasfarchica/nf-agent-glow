@@ -74,7 +74,7 @@ const translations = {
     'cta.button': 'Comenzar Ahora',
     
     // Contact Form
-    'form.title': 'Agenda una consulta gratuita',
+    'form.title': 'Agenda una consulta',
     'form.subtitle': 'Completa el formulario y te contactaremos pronto',
     'form.name': 'Nombre completo',
     'form.name.placeholder': 'Tu nombre completo',
@@ -167,7 +167,7 @@ const translations = {
     'cta.button': 'Start Now',
     
     // Contact Form
-    'form.title': 'Schedule a free consultation',
+    'form.title': 'Schedule a consultation',
     'form.subtitle': 'Fill out the form and we\'ll contact you soon',
     'form.name': 'Full name',
     'form.name.placeholder': 'Your full name',

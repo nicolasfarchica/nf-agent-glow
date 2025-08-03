@@ -1,24 +1,28 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const ProcessSection = () => {
+  const { t } = useLanguage();
+  
   const steps = [
     {
       number: "01",
-      title: "Análisis y Planificación",
-      description: "Entendemos tus necesidades y definimos la estrategia"
+      title: t('process.step1.title'),
+      description: t('process.step1.desc')
     },
     {
       number: "02", 
-      title: "Diseño y Prototipado",
-      description: "Creamos wireframes y diseños centrados en el usuario"
+      title: t('process.step2.title'),
+      description: t('process.step2.desc')
     },
     {
       number: "03",
-      title: "Desarrollo y Testing",
-      description: "Construimos con tecnologías de vanguardia"
+      title: t('process.step3.title'),
+      description: t('process.step3.desc')
     },
     {
       number: "04",
-      title: "Lanzamiento y Soporte",
-      description: "Desplegamos y brindamos soporte continuo"
+      title: t('process.step4.title'),
+      description: t('process.step4.desc')
     }
   ];
 
@@ -27,7 +31,7 @@ const ProcessSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Nuestro <span className="text-gradient">Proceso</span>
+            {t('process.title')} <span className="text-gradient">{t('process.title.highlight')}</span>
           </h2>
         </div>
 

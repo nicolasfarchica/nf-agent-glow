@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Clock, User, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const BlogSection = () => {
+  const { t } = useLanguage();
   const articles = [
     {
       title: "El Futuro del Marketing Digital con Inteligencia Artificial",
@@ -46,10 +48,10 @@ const BlogSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Blog de <span className="text-gradient">Tendencias e IA</span>
+            {t('blog.title')} <span className="text-gradient">{t('blog.title.highlight')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mantente al día con las últimas tendencias en inteligencia artificial y marketing digital
+            {t('blog.subtitle')}
           </p>
         </div>
 
@@ -96,7 +98,7 @@ const BlogSection = () => {
                 </p>
                 
                 <div className="flex items-center text-primary font-medium group-hover:text-primary-glow transition-smooth">
-                  <span className="mr-2">Leer más</span>
+                  <span className="mr-2">{t('blog.readMore')}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-smooth" />
                 </div>
               </div>
@@ -106,7 +108,7 @@ const BlogSection = () => {
 
         <div className="text-center">
           <Button variant="outline-glow" size="lg" className="hover-scale">
-            Ver todos los artículos
+            {t('blog.viewAll')}
           </Button>
         </div>
       </div>

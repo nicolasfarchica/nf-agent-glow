@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CTASection = () => {
+  const { t } = useLanguage();
   return (
     <section id="contacto" className="py-20 px-6 bg-gradient-to-br from-primary/5 to-accent/5 relative overflow-hidden">
       {/* Background pattern */}
@@ -22,13 +24,13 @@ const CTASection = () => {
       <div className="container mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           <h2 className="text-4xl lg:text-6xl font-bold mb-6">
-            ¿Listo para <span className="text-gradient">digitalizar</span> tu negocio?
+            {t('cta.title')} <span className="text-gradient">{t('cta.title.highlight')}</span> {t('cta.title.end')}
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Hablemos sobre tu próximo proyecto y llevemos tu visión al siguiente nivel
+            {t('cta.subtitle')}
           </p>
           <Button variant="hero" size="xl" className="hover-scale glow-primary">
-            Comenzar Ahora
+            {t('cta.button')}
           </Button>
         </div>
       </div>

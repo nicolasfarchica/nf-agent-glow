@@ -1,36 +1,39 @@
 import { Bot, Zap, Users, BarChart3, MessageSquare, Settings } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ServicesSection = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Bot,
-      title: "Automatización con IA",
-      description: "Implementamos chatbots inteligentes y automatizaciones que optimizan tus procesos de marketing y ventas 24/7"
+      title: t('services.ai.title'),
+      description: t('services.ai.desc')
     },
     {
       icon: Users,
-      title: "Gestión CRM Inteligente",
-      description: "Sistemas CRM potenciados con IA para gestionar leads, automatizar seguimientos y aumentar conversiones"
+      title: t('services.crm.title'),
+      description: t('services.crm.desc')
     },
     {
       icon: MessageSquare,
-      title: "Marketing en Redes Sociales",
-      description: "Estrategias de contenido automatizadas, programación inteligente y análisis de engagement con IA"
+      title: t('services.social.title'),
+      description: t('services.social.desc')
     },
     {
       icon: BarChart3,
-      title: "Analítica Predictiva",
-      description: "Análisis avanzado de datos con machine learning para predecir tendencias y optimizar campañas"
+      title: t('services.analytics.title'),
+      description: t('services.analytics.desc')
     },
     {
       icon: Zap,
-      title: "Email Marketing Automatizado",
-      description: "Campañas de email personalizadas con IA que se adaptan al comportamiento de cada usuario"
+      title: t('services.email.title'),
+      description: t('services.email.desc')
     },
     {
       icon: Settings,
-      title: "Integración de Sistemas",
-      description: "Conectamos todas tus herramientas de marketing con automatizaciones inteligentes y APIs"
+      title: t('services.integration.title'),
+      description: t('services.integration.desc')
     }
   ];
 
@@ -39,10 +42,10 @@ const ServicesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Servicios de <span className="text-gradient">IA y Marketing Digital</span>
+            {t('services.title')} <span className="text-gradient">{t('services.title.highlight')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Potenciamos tu negocio con inteligencia artificial aplicada al marketing digital
+            {t('services.subtitle')}
           </p>
         </div>
 

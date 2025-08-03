@@ -1,4 +1,7 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const TestimonialsSection = () => {
+  const { t } = useLanguage();
   const testimonials = [
     {
       text: "NF Agent transformó completamente nuestra presencia digital. Su enfoque innovador y atención al detalle superaron nuestras expectativas.",
@@ -32,7 +35,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto relative">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 hover:text-gradient transition-smooth cursor-default">
-            Lo que dicen nuestros <span className="text-gradient animate-pulse-glow">clientes</span>
+            {t('testimonials.title')} <span className="text-gradient animate-pulse-glow">{t('testimonials.title.highlight')}</span>
           </h2>
         </div>
 

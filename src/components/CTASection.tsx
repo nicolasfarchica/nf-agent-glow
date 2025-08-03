@@ -99,7 +99,7 @@ const CTASection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-start">
+        <div className="grid lg:grid-cols-[1fr_1.8fr] gap-12 items-start">
           {/* Left Column - Calendar */}
           <div className="animate-fade-in">
             {/* Large Calendar Display */}

@@ -8,51 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* NF Agent Futuristic Design System */
+    --background: 210 29% 24%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 29% 24%;
+    --card-foreground: 0 0% 100%;
+    --card-glass: 210 29% 24% / 0.05;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 29% 24%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 182 100% 43%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 182 100% 50%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 204 8% 76%;
+    --secondary-foreground: 210 29% 24%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 29% 30%;
+    --muted-foreground: 204 8% 76%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 182 100% 43%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 29% 30%;
+    --input: 210 29% 30%;
+    --ring: 182 100% 43%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(182, 100%, 43%), hsl(182, 100%, 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(210, 29%, 24%) 0%, hsl(210, 29%, 20%) 100%);
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(182 100% 43% / 0.3);
+    --backdrop-blur: blur(10px);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar variables for compatibility */
+    --sidebar-background: 210 29% 24%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 182 100% 43%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 29% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 29% 30%;
+    --sidebar-ring: 182 100% 43%;
   }
 
   .dark {
@@ -100,6 +105,49 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-2xl;
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-[10px] border-b border-white/10;
+  }
+
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+
+  .hover-scale {
+    @apply transition-smooth hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-smooth hover:glow-primary;
   }
 }

@@ -28,8 +28,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#inicio" className="text-muted-foreground hover:text-primary transition-smooth">Inicio</a></li>
               <li><a href="#servicios" className="text-muted-foreground hover:text-primary transition-smooth">Servicios</a></li>
-              <li><a href="#portfolio" className="text-muted-foreground hover:text-primary transition-smooth">Portfolio</a></li>
-              <li><a href="#nosotros" className="text-muted-foreground hover:text-primary transition-smooth">Sobre Nosotros</a></li>
+              <li><a href="#blog" className="text-muted-foreground hover:text-primary transition-smooth">Blog</a></li>
+              <li><a href="#testimonios" className="text-muted-foreground hover:text-primary transition-smooth">Testimonios</a></li>
+              <li><a href="#contacto" className="text-muted-foreground hover:text-primary transition-smooth">Contacto</a></li>
             </ul>
           </div>
 

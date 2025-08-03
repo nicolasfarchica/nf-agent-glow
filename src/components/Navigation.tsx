@@ -28,6 +28,7 @@ const Navigation = () => {
             <a href="#servicios" className="text-foreground hover:text-primary transition-smooth">Servicios</a>
             <a href="#nosotros" className="text-foreground hover:text-primary transition-smooth">Sobre Nosotros</a>
             <a href="#blog" className="text-foreground hover:text-primary transition-smooth">Blog</a>
+            <a href="#testimonios" className="text-foreground hover:text-primary transition-smooth">Testimonios</a>
             <a href="#contacto" className="text-foreground hover:text-primary transition-smooth">Contacto</a>
           </div>
 

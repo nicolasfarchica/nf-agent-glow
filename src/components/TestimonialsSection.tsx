@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-muted/10 relative overflow-hidden">
+    <section id="testimonios" className="py-20 px-6 bg-muted/10 relative overflow-hidden">
       {/* Background animated elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary rounded-full blur-3xl animate-float"></div>

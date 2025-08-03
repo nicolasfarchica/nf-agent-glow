@@ -31,9 +31,9 @@ const Navigation = () => {
             <a href="#contacto" className="text-foreground hover:text-primary transition-smooth">Contacto</a>
           </div>
 
-          {/* CTA Button */}
+          {/* Newsletter Button */}
           <Button variant="hero" size="lg" className="hidden md:flex">
-            Comenzar Proyecto
+            Registrarte
           </Button>
 
           {/* Mobile Menu Button */}

@@ -73,6 +73,25 @@ const translations = {
     'cta.subtitle': 'Hablemos sobre tu próximo proyecto y llevemos tu visión al siguiente nivel',
     'cta.button': 'Comenzar Ahora',
     
+    // Contact Form
+    'form.title': 'Agenda una consulta gratuita',
+    'form.subtitle': 'Completa el formulario y te contactaremos pronto',
+    'form.name': 'Nombre completo',
+    'form.name.placeholder': 'Tu nombre completo',
+    'form.email': 'Correo electrónico',
+    'form.email.placeholder': 'tu@email.com',
+    'form.phone': 'Número de teléfono',
+    'form.phone.placeholder': '+1 (555) 123-4567',
+    'form.company': 'Empresa (opcional)',
+    'form.company.placeholder': 'Nombre de tu empresa',
+    'form.date': 'Fecha preferida',
+    'form.date.placeholder': 'Selecciona una fecha',
+    'form.message': 'Información adicional (opcional)',
+    'form.message.placeholder': 'Cuéntanos sobre tu proyecto...',
+    'form.submit': 'Enviar solicitud',
+    'form.success': 'Solicitud enviada exitosamente',
+    'form.error': 'Error al enviar la solicitud',
+    
     // Footer
     'footer.description': 'Construimos experiencias digitales del futuro con tecnología de vanguardia y diseño innovador.',
     'footer.quickLinks': 'Enlaces Rápidos',
@@ -146,6 +165,25 @@ const translations = {
     'cta.title.end': 'your business?',
     'cta.subtitle': 'Let\'s talk about your next project and take your vision to the next level',
     'cta.button': 'Start Now',
+    
+    // Contact Form
+    'form.title': 'Schedule a free consultation',
+    'form.subtitle': 'Fill out the form and we\'ll contact you soon',
+    'form.name': 'Full name',
+    'form.name.placeholder': 'Your full name',
+    'form.email': 'Email address',
+    'form.email.placeholder': 'your@email.com',
+    'form.phone': 'Phone number',
+    'form.phone.placeholder': '+1 (555) 123-4567',
+    'form.company': 'Company (optional)',
+    'form.company.placeholder': 'Your company name',
+    'form.date': 'Preferred date',
+    'form.date.placeholder': 'Select a date',
+    'form.message': 'Additional information (optional)',
+    'form.message.placeholder': 'Tell us about your project...',
+    'form.submit': 'Send request',
+    'form.success': 'Request sent successfully',
+    'form.error': 'Error sending request',
     
     // Footer
     'footer.description': 'We build digital experiences of the future with cutting-edge technology and innovative design.',

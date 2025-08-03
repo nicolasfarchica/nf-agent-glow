@@ -103,13 +103,13 @@ const CTASection = () => {
           {/* Left Column - Calendar */}
           <div className="animate-fade-in">
             {/* Large Calendar Display */}
-            <div className="glass-card p-6 mb-6">
-              <h4 className="text-lg font-semibold mb-4 text-foreground">Selecciona tu fecha preferida</h4>
+            <div className="glass-card p-4 mb-4">
+              <h4 className="text-base font-semibold mb-3 text-foreground">Selecciona tu fecha preferida</h4>
               <Calendar
                 mode="single"
                 selected={new Date()}
                 disabled={(date) => date < new Date()}
-                className="w-full justify-center pointer-events-auto"
+                className="w-full justify-center pointer-events-auto scale-90"
                 classNames={{
                   months: "flex flex-col space-y-4",
                   month: "space-y-4",

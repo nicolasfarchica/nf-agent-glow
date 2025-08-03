@@ -99,7 +99,7 @@ const CTASection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12 items-start">
+        <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-start">
           {/* Left Column - Calendar */}
           <div className="animate-fade-in">
             {/* Large Calendar Display */}
@@ -137,7 +137,7 @@ const CTASection = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="lg:col-span-2 glass-card p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="glass-card p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-bold mb-2 text-foreground">{t('form.title')}</h3>
             <p className="text-muted-foreground mb-6">{t('form.subtitle')}</p>
             

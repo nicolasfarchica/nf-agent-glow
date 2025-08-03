@@ -108,7 +108,12 @@ const CTASection = () => {
               <Calendar
                 mode="single"
                 selected={new Date()}
-                disabled={(date) => date < new Date()}
+                disabled={(date) => {
+                  const today = new Date();
+                  today.setHours(0, 0, 0, 0);
+                  const isWeekend = date.getDay() === 0 || date.getDay() === 6; // Sunday = 0, Saturday = 6
+                  return date < today || isWeekend;
+                }}
                 className="w-full justify-center pointer-events-auto"
                 classNames={{
                   months: "flex flex-col space-y-4",
@@ -232,7 +237,12 @@ const CTASection = () => {
                               mode="single"
                               selected={field.value}
                               onSelect={field.onChange}
-                              disabled={(date) => date < new Date()}
+                              disabled={(date) => {
+                                const today = new Date();
+                                today.setHours(0, 0, 0, 0);
+                                const isWeekend = date.getDay() === 0 || date.getDay() === 6;
+                                return date < today || isWeekend;
+                              }}
                               initialFocus
                               className={cn("p-3 pointer-events-auto")}
                             />

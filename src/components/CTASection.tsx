@@ -92,7 +92,7 @@ const CTASection = () => {
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left Column - CTA */}
           <div className="animate-fade-in">
-            <h2 className="text-4xl lg:text-6xl font-bold mb-6">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-6">
               {t('cta.title')} <span className="text-gradient">{t('cta.title.highlight')}</span> {t('cta.title.end')}
             </h2>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl">

@@ -1,21 +1,36 @@
-import { Code, Palette, Target } from "lucide-react";
+import { Bot, Zap, Users, BarChart3, MessageSquare, Settings } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Code,
-      title: "Desarrollo Web",
-      description: "Sitios web modernos y aplicaciones responsive con las últimas tecnologías"
+      icon: Bot,
+      title: "Automatización con IA",
+      description: "Implementamos chatbots inteligentes y automatizaciones que optimizan tus procesos de marketing y ventas 24/7"
     },
     {
-      icon: Palette,
-      title: "Diseño UX/UI",
-      description: "Interfaces intuitivas centradas en el usuario y experiencias memorables"
+      icon: Users,
+      title: "Gestión CRM Inteligente",
+      description: "Sistemas CRM potenciados con IA para gestionar leads, automatizar seguimientos y aumentar conversiones"
     },
     {
-      icon: Target,
-      title: "Consultoría Digital",
-      description: "Estrategias digitales personalizadas para hacer crecer tu negocio"
+      icon: MessageSquare,
+      title: "Marketing en Redes Sociales",
+      description: "Estrategias de contenido automatizadas, programación inteligente y análisis de engagement con IA"
+    },
+    {
+      icon: BarChart3,
+      title: "Analítica Predictiva",
+      description: "Análisis avanzado de datos con machine learning para predecir tendencias y optimizar campañas"
+    },
+    {
+      icon: Zap,
+      title: "Email Marketing Automatizado",
+      description: "Campañas de email personalizadas con IA que se adaptan al comportamiento de cada usuario"
+    },
+    {
+      icon: Settings,
+      title: "Integración de Sistemas",
+      description: "Conectamos todas tus herramientas de marketing con automatizaciones inteligentes y APIs"
     }
   ];
 
@@ -24,11 +39,14 @@ const ServicesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Nuestros <span className="text-gradient">Servicios</span>
+            Servicios de <span className="text-gradient">IA y Marketing Digital</span>
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Potenciamos tu negocio con inteligencia artificial aplicada al marketing digital
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}

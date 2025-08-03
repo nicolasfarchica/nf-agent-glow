@@ -57,7 +57,6 @@ const TestimonialsSection = () => {
                     className="w-12 h-12 rounded-full mr-4 animate-float border-2 border-transparent group-hover:border-primary transition-smooth"
                     style={{ animationDelay: `${index * 0.5}s` }}
                   />
-                  <div className="absolute inset-0 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-smooth animate-pulse-glow"></div>
                 </div>
                 <div className="transform group-hover:translate-x-1 transition-smooth">
                   <h4 className="font-semibold text-foreground group-hover:text-primary transition-smooth">

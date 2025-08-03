@@ -37,10 +37,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4">Servicios</h3>
             <ul className="space-y-2">
-              <li><span className="text-muted-foreground">Desarrollo Web</span></li>
-              <li><span className="text-muted-foreground">Diseño UX/UI</span></li>
-              <li><span className="text-muted-foreground">Consultoría Digital</span></li>
-              <li><span className="text-muted-foreground">E-commerce</span></li>
+              <li><span className="text-muted-foreground">Automatización con IA</span></li>
+              <li><span className="text-muted-foreground">Gestión CRM Inteligente</span></li>
+              <li><span className="text-muted-foreground">Marketing en Redes Sociales</span></li>
+              <li><span className="text-muted-foreground">Analítica Predictiva</span></li>
+              <li><span className="text-muted-foreground">Email Marketing Automatizado</span></li>
+              <li><span className="text-muted-foreground">Integración de Sistemas</span></li>
             </ul>
           </div>
 

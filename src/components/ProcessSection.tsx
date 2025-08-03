@@ -23,7 +23,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-muted/20">
+    <section id="nosotros" className="py-20 px-6 bg-muted/20">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">

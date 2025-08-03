@@ -89,7 +89,7 @@ const CTASection = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left Column - CTA */}
           <div className="animate-fade-in">
             <h2 className="text-4xl lg:text-6xl font-bold mb-6">
@@ -98,10 +98,43 @@ const CTASection = () => {
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl">
               {t('cta.subtitle')}
             </p>
+            
+            {/* Large Calendar Display */}
+            <div className="glass-card p-6 mb-6">
+              <h4 className="text-lg font-semibold mb-4 text-foreground">Selecciona tu fecha preferida</h4>
+              <Calendar
+                mode="single"
+                selected={new Date()}
+                disabled={(date) => date < new Date()}
+                className="w-full justify-center pointer-events-auto"
+                classNames={{
+                  months: "flex flex-col space-y-4",
+                  month: "space-y-4",
+                  caption: "flex justify-center pt-1 relative items-center",
+                  caption_label: "text-lg font-medium",
+                  nav: "space-x-1 flex items-center",
+                  nav_button: "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
+                  nav_button_previous: "absolute left-1",
+                  nav_button_next: "absolute right-1",
+                  table: "w-full border-collapse space-y-1",
+                  head_row: "flex",
+                  head_cell: "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
+                  row: "flex w-full mt-2",
+                  cell: "text-center text-sm p-0 relative [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
+                  day: "h-9 w-9 p-0 font-normal aria-selected:opacity-100 hover:bg-primary/20 rounded-md transition-colors",
+                  day_selected: "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
+                  day_today: "bg-accent text-accent-foreground",
+                  day_outside: "text-muted-foreground opacity-50",
+                  day_disabled: "text-muted-foreground opacity-50",
+                  day_range_middle: "aria-selected:bg-accent aria-selected:text-accent-foreground",
+                  day_hidden: "invisible",
+                }}
+              />
+            </div>
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="glass-card p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="lg:col-span-2 glass-card p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-bold mb-2 text-foreground">{t('form.title')}</h3>
             <p className="text-muted-foreground mb-6">{t('form.subtitle')}</p>
             

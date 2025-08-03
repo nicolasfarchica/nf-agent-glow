@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground">Ciudad Futura, Tech Valley</span>
+                <span className="text-muted-foreground">Hoffmeyersvej , 2000 Frederiksberg</span>
               </div>
             </div>
           </div>

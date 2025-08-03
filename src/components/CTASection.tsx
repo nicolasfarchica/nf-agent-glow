@@ -103,7 +103,7 @@ const CTASection = () => {
           {/* Left Column - Calendar */}
           <div className="animate-fade-in">
             {/* Large Calendar Display */}
-            <div className="glass-card p-3 mb-3">
+            <div className="glass-card p-6 mb-4 hover-scale hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:border-primary/30 animate-fade-in">
               <h4 className="text-base font-semibold mb-3 text-foreground">Selecciona tu fecha preferida</h4>
               <Calendar
                 mode="single"
